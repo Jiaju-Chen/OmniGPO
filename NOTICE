@@ -1,0 +1,15 @@
+OmniGPO core
+
+The portable API and packaging accompany the experiment-matched graph and neural
+credit implementation. Source provenance is recorded in SOURCE_PROVENANCE.json.
+
+Portions of gigpo/ppo.py and gigpo/tensor_ops.py are extracted/adapted from the
+verl/TRL-derived PPO implementation and retain the original notices:
+Copyright 2024 Bytedance Ltd. and/or its affiliates
+Copyright 2022 The HuggingFace Team. All rights reserved.
+Licensed under the Apache License, Version 2.0.
+
+Changes in those files are extraction and portable import adaptation, not a claim
+of inventing PPO, GAE, or the underlying tensor operations. Existing baseline
+Gated-BEPO graph credit and its outcome/support gates are preserved, not presented
+as new graph-to-critic contributions. No third-party model or dataset is bundled.

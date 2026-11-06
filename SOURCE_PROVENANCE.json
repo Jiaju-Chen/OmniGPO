@@ -1,0 +1,22 @@
+{
+  "reference": "ScienceWorld fixed-q paired experiment source manifest, 2026-11-05",
+  "original_source_sha256": {
+    "gigpo/core_bepo.py": "cd06ea0282f1824e0510ecc5098e9b5af0a522d66772932369d3e2246c9b724b",
+    "gigpo/graph_value_teacher.py": "50957b6b9730466b58f035063b345cce9e2f97abcc903e75ee7f078fd7881f11",
+    "gigpo/bepo_neural_credit.py": "a97eaac5f2871e802c0494606730f6f183fabba2bb73c11cf05c28ff48926850",
+    "verl/trainer/ppo/core_algos.py": "fda5298a779c575c1b78b7e6e46638e6c92bcb7438a1bac52add47037cea4dd7"
+  },
+  "packaging_changes": [
+    "Replace the neural-credit GAE import with gigpo.ppo; no verl/Ray import required.",
+    "Reject experimental dynamic routing/MC-direct at the public fixed-core entry point.",
+    "Extract four PPO/GAE functions without arithmetic changes; preserve Apache-2.0 notices.",
+    "Add portable API, fixtures, tests, and documentation; no full trainer/model/dataset export."
+  ],
+  "runtime_scope": "core algorithms only; no claimed end-to-end reproduction or new benchmark results",
+  "function_ast_sha256": {
+    "compute_turn_ppo_gae": "332f10a7768d3a10e3efb7de50ff19b2700cfc826fbd43fd5632fbcce3615c3d",
+    "agg_loss": "b4eb7af863090cc4e89faa08219ce3c56f2f5e326521c55501e2c5a4748081d6",
+    "compute_policy_loss": "f464939b562d7b63695679841cdeb1332287e2fee940dbbd681d332b67f137c6",
+    "compute_value_loss": "22658f4566ce3c2f19a674ba1e040d24f6fd67f6b928ddbc112a585fbeeca8ea"
+  }
+}
